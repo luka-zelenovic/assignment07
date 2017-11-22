@@ -20,12 +20,12 @@ function draw() {
 		filter(THRESHOLD);
 		fill(random(255),random(255),random(255));
 				rect(random(0,375),random(0,375),25,25);
-	}  else if (vol>.1 && vol<.3) {
+	}  else if (vol>.1 && vol<.25) {
 		filter(INVERT);
 	fill(random(255),random(255),random(255));
 				ellipse(random(0,375),random(0,375),50);
 
-	}  else if (vol>.3 && vol<.5) {
+	}  else if (vol>.25 && vol<.5) {
 		filter(POSTERIZE,3);
 		strokeWeight(5);
 				stroke(random(255),random(255),random(255));
